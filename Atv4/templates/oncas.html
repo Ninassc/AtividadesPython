@@ -1,0 +1,95 @@
+<!-- ONCAS.HTML -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Onças</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="titulo">Onças</h1>
+
+        <ul>
+            <a href="{{ url_for('index') }}">
+                <li>Início</li>
+            </a>
+            <a href="{{ url_for('gatos') }}">
+                <li>Gatos</li>
+            </a>
+
+            <a href="{{ url_for('cachorros') }}">
+                <li>Cachorros</li>
+            </a>
+
+            <a href="{{ url_for('oncas') }}">
+                <li>Onças</li>
+            </a>
+        </ul>
+    </header>
+
+    <main>
+
+        <section class="banner">
+            <h2>Os grandes felinos das florestas</h2>
+
+            <p>
+                As onças são animais fortes, silenciosos e extremamente ágeis.
+                Elas possuem um papel essencial no equilíbrio da natureza.
+            </p>
+
+            <img src="../static/images/onca-pintada-591459416.jpg" alt="Onça">
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>Força Impressionante</h3>
+
+                <p>
+                    A mordida da onça-pintada é considerada uma das mais fortes entre os felinos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Excelentes Caçadoras</h3>
+
+                <p>
+                    Elas conseguem se movimentar silenciosamente e atacar com muita precisão.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Nadam Muito Bem</h3>
+
+                <p>
+                    Diferente de muitos felinos, onças adoram água e são ótimas nadadoras.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="curiosidades">
+
+            <h2>Curiosidades sobre onças</h2>
+
+            <ul>
+                <li>A onça-pintada é o maior felino das Américas.</li>
+                <li>Suas manchas são únicas, como impressões digitais.</li>
+                <li>Elas conseguem subir em árvores com facilidade.</li>
+                <li>Vivem principalmente em florestas e regiões alagadas.</li>
+                <li>São animais fundamentais para o equilíbrio ambiental.</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

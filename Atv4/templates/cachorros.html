@@ -1,0 +1,95 @@
+<!-- CACHORROS.HTML -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Cachorros</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="titulo">Cachorros</h1>
+
+        <ul>
+            <a href="{{ url_for('index') }}">
+                <li>Início</li>
+            </a>
+            <a href="{{ url_for('gatos') }}">
+                <li>Gatos</li>
+            </a>
+
+            <a href="{{ url_for('cachorros') }}">
+                <li>Cachorros</li>
+            </a>
+
+            <a href="{{ url_for('oncas') }}">
+                <li>Onças</li>
+            </a>
+        </ul>
+    </header>
+
+    <main>
+
+        <section class="banner">
+            <h2>Os melhores amigos do ser humano</h2>
+
+            <p>
+                Cachorros são leais, brincalhões e extremamente companheiros.
+                Eles conseguem transformar qualquer ambiente em um lugar mais alegre.
+            </p>
+
+            <img src="../static/images/cachorroPeludo.webp" alt="Cachorro feliz">
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>Companheiros</h3>
+
+                <p>
+                    Cachorros adoram estar perto das pessoas e criam vínculos muito fortes com seus donos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Cheios de Energia</h3>
+
+                <p>
+                    Muitos cachorros amam correr, brincar e passear praticamente o dia inteiro.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Super Inteligentes</h3>
+
+                <p>
+                    Eles conseguem aprender comandos, reconhecer emoções e até entender rotinas.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="curiosidades">
+
+            <h2>Curiosidades sobre cachorros</h2>
+
+            <ul>
+                <li>O olfato deles é muito mais forte que o dos humanos.</li>
+                <li>Existem centenas de raças diferentes.</li>
+                <li>Alguns cachorros conseguem aprender dezenas de palavras.</li>
+                <li>Abanar o rabo pode significar diferentes emoções.</li>
+                <li>Eles adoram companhia e atenção.</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

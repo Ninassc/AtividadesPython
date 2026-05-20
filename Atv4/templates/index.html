@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="../static/css/style.css">
     <title>Home</title>
 </head>
 <body>
     <header>
-        <h1>Animais</h1>
+        <h1 class="titulo">Animais</h1>
         <ul>
-            <a href=""><li>Gatos</li></a>
-            <a href=""><li>Cachorros</li></a>
-            <a href=""><li>Onças</li></a>
+            <a href="{{ url_for('index') }}"><li>Início</li></a>
+            <a href="{{ url_for('gatos') }}"><li>Gatos</li></a>
+            <a href="{{ url_for('cachorros') }}"><li>Cachorros</li></a>
+            <a href="{{ url_for('oncas') }}"><li>Onças</li></a>
         </ul>
     </header>
+    
     <div class="content">
         <div class="imagens">
             <div class="gato-inicio">
                 <h2>Gato</h2>
                 <img src="../static/images/gatoInicio.jpg" alt="">
-                <a href="">Ir para a página</a>
+                <a href="{{ url_for('gatos') }}">Ir para a página</a>
             </div>
             <div class="cahorro-inicio">
                 <h2>Cachorro</h2>
                 <img src="../static/images/cachorroInicio.jpg" alt="">
-                <a href="">Ir para a página</a>
+                <a href="{{ url_for('cachorros') }}">Ir para a página</a>
             </div>
             <div class="onça-inicio">
                 <h2>Onça</h2>
                 <img src="../static/images/onca-pintada-591459416.jpg" alt="">
-                <a href="">Ir para a página</a>
+                <a href="{{ url_for('oncas') }}">Ir para a página</a>
             </div>
         </div>
     </div>

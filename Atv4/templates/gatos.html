@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Gatos</h1>
+        <ul>
+            <a href="{{ url_for('index') }}">
+                <li>Início</li>
+            </a>
+            <a href="{{ url_for('gatos') }}">
+                <li>Gatos</li>
+            </a>
+            <a href="{{ url_for('cachorros') }}">
+                <li>Cachorros</li>
+            </a>
+            <a href="{{ url_for('oncas') }}">
+                <li>Onças</li>
+            </a>
+        </ul>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h2>Os felinos mais amados</h2>
+            <p>
+                Gatos são independentes, curiosos, engraçados e extremamente inteligentes.
+                Cada um possui sua própria personalidade, desde os mais dorminhocos até os totalmente caóticos às 4h da
+                manhã.
+            </p>
+
+            <img src="../static/images/gatodormindo.avif" alt="Gato fofo">
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Personalidade Única</h3>
+                <p>
+                    Alguns gatos são carinhosos e outros preferem observar tudo de longe como pequenos CEOs da casa.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Dormem Muito</h3>
+                <p>
+                    Um gato pode dormir entre 12 e 16 horas por dia. Basicamente o emprego deles é existir e ser fofos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Super Ágeis</h3>
+                <p>
+                    Gatos possuem reflexos impressionantes e conseguem saltar várias vezes a própria altura.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="curiosidades">
+            <h2>Curiosidades sobre gatos</h2>
+
+            <ul>
+                <li>O ronronar pode ajudar no relaxamento.</li>
+                <li>Eles enxergam muito bem no escuro.</li>
+                <li>Adoram caixas mais do que brinquedos caros.</li>
+                <li>Cada gato possui preferências alimentares diferentes.</li>
+                <li>Possuem horários aleatórios de energia máxima.</li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
