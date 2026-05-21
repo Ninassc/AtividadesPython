@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Dado Usuário
+{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Página Dado Usuário</h1>
+</header>
+
+<p>Nota = {{nota}}</p>
+{% if nota >= 7 %}
+    <p>Aprovado</p>
+{% else %}
+    <p>Reprovado</p>
+{% endif %}
+
+{% endblock %}
