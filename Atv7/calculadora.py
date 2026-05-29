@@ -67,4 +67,8 @@ def calcular():
             resultado = num1 ** num2
             etapas = f"{num1} ^ {num2} = {resultado}"
 
+        if operacao == "log":
+            resultado = math.log(num1, num2)
+            etapas = f"Log de {num1} na base {num2} = {resultado}"
+
         return render_template("calculadora.html", etapas = etapas, resultado = resultado)
