@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Formulário
+{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Adicionar Aluno</h1>
+</header>
+
+<div class="content-formulario">
+    <form method="post">
+        <div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome">
+        </div>
+        <div class="campo">
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone">
+        </div>
+        <button type="submit">Salvar</button>
+    </form>
+    <div class="redirecionar">
+        <a href="{{url_for('lista')}}">Voltar</a>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title%} Lista Alunos {% endblock %}
+
+{% block content %}
+<header>
+    <h1>Lista Alunos Ordenada</h1>
+</header>
+
+<body>
+    <div class="content-lista">
+        <div class="lista-alunos">
+            {% for aluno in alunos %}
+            <div class="aluno">
+                <p>ID: {{aluno.id}}</p>
+                <p>Nome: {{aluno.nome}}</p>
+                <p>Telefone: {{aluno.telefone}}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="total">
+            <p>Total Alunos = {{total_alunos}} </p>
+        </div>
+        <div class="redirecionar">
+            <a href="{{url_for('novo')}}">Adicionar Aluno</a>
+        </div>
+    </div>
+</body>
+{% endblock %}
