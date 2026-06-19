@@ -16,7 +16,7 @@ class Sessao(ModeloBase):
     # TODO ALUNO: relationship filme, sala, ingressos
     filme = db.relationship("Filme", back_populates="sessoes")
     sala = db.relationship("Sala", back_populates="sessoes")
-    ingressos = db.relationship("Ingressos", back_populates="sessoes")
+    ingressos = db.relationship("Ingresso", back_populates="sessao")
 
     @classmethod
     def listar_com_detalhes(cls):

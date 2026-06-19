@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Sistema de Cinema</h1>
+</header>
+<div class="content">
+    <div class="imagens">
+        <div class="filme">
+            <div class="imagem">
+                <img src="../static/images/vingadores.webp" alt="">
+            </div>
+            <p>Vingadores Ultimato</p>
+        </div>
+        <div class="filme">
+            <div class="imagem">
+                <img src="../static/images/divertidamente.webp" alt="">
+            </div>
+            <p>Divertidamente</p>
+        </div>
+    </div>
+
+    <div class="ver">
+        <a href="{{url_for('cinema.index')}}">Ver Sessões</a>
+    </div>
+</div>
+{% endblock %}

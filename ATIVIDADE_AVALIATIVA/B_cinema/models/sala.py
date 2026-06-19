@@ -9,7 +9,7 @@ class Sala(ModeloBase):
     capacidade = db.Column(db.Integer, nullable=False)
 
     # TODO ALUNO: relationship sessoes
-    sessoes = db.relationship("Sessao", back_populates="filmes")
+    sessoes = db.relationship("Sessao", back_populates="sala")
 
     @classmethod
     def listar(cls):
