@@ -94,3 +94,7 @@ def api_populares_tmdb():
         "fonte": "TMDB (demo)" if demo else "TMDB",
         "resultados": filmes,
     })
+
+@api_v1_bp.route("/status", methods=["GET"])
+def status():
+    return jsonify({"status": "API está funcionando"}), 200
