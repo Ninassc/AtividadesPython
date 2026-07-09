@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}Lanchonete Delícia{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 flex flex-col min-h-screen text-gray-800">
+
+    <nav class="bg-amber-500 text-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl font-bold tracking-wide">
+                    🍔 Lanchonete Delícia
+                </div>
+                <div class="flex space-x-4">
+                    <div class="flex space-x-4">
+                        <a href="/"
+                            class="hover:bg-amber-600 px-3 py-2 rounded-md text-sm font-medium transition">Início</a>
+                        <a href="/cliente"
+                            class="hover:bg-amber-600 px-3 py-2 rounded-md text-sm font-medium transition">Clientes</a>
+                        <a href="/fornecedor"
+                            class="hover:bg-amber-600 px-3 py-2 rounded-md text-sm font-medium transition">Fornecedores</a>
+                        <a href="/cliente/novo"
+                            class="bg-amber-600 hover:bg-amber-700 px-3 py-2 rounded-md text-sm font-medium transition">+
+                            Cliente</a>
+                        <a href="/fornecedor/novo"
+                            class="bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-md text-sm font-medium transition">+
+                            Fornecedor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 py-8">
+        {% block conteudo %}
+        {% endblock %}
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 text-center py-4 text-sm mt-auto">
+        <p>&copy; 2026 Lanchonete Delícia. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

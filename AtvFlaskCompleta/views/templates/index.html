@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Início - Lanchonete Delícia{% endblock %}
+
+{% block conteudo %}
+<div class="text-center max-w-2xl mx-auto mt-8">
+    <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
+        Bem-vindo ao Sistema da <span class="text-amber-500">Lanchonete</span>!
+    </h1>
+    <p class="mt-4 text-lg text-gray-600">
+        Gerencie seus clientes, fornecedores e pedidos de forma rápida e simplificada em um só lugar.
+    </p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col justify-between">
+        <div>
+            <h3 class="text-xl font-semibold text-gray-800">Painel de Clientes</h3>
+            <p class="text-gray-500 mt-2">Visualizar a lista de clientes cadastrados e a frequência de pedidos.</p>
+        </div>
+        <a href="/cliente" class="mt-4 inline-block text-center bg-amber-500 hover:bg-amber-600 text-white font-medium py-2 px-4 rounded-lg transition">
+            Ver Clientes
+        </a>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col justify-between">
+        <div>
+            <h3 class="text-xl font-semibold text-gray-800">Lista de Fornecedores</h3>
+            <p class="text-gray-500 mt-2">Gerencie os parceiros que mantêm nosso estoque de ingredientes sempre cheio.</p>
+        </div>
+        <a href="/fornecedor" class="mt-4 inline-block text-center bg-gray-700 hover:bg-gray-800 text-white font-medium py-2 px-4 rounded-lg transition">
+            Ver Fornecedores
+        </a>
+    </div>
+</div>
+{% endblock %}
