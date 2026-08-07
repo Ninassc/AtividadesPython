@@ -1,6 +1,8 @@
+# Respostas Atividade
+
 1) Às 13h o professor Igor vai estar a uma temperatura de 30.2 graus
 
-2) Às 15h a professora COnceição vai estar a uma tempetatura de 24 graus
+2) Às 15h a professora Conceição vai estar a uma tempetatura de 24 graus
 
 3) Às 19h Zendaya vai estar a uma temperatura de 24.4 graus
 
